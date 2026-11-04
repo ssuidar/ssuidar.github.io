@@ -1,0 +1,282 @@
+Here is a complete, SEO-optimized HTML page for the exposure-x7-desktop README. It guides non-technical Windows users to download the app, explains how dated backups protect configs and exports, and includes a prominent call-to-action button.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exposure-x7-desktop — Keep Your Exposure X7 Data Safe on Windows</title>
+<meta name="description" content="Exposure X7 Desktop is a simple Windows utility that keeps dated copies of your Exposure X7 config and export folders on disk, so you always have a safe restore point before a patch.">
+<meta name="keywords" content="2026-exposure-x7, app-exposure-x7, desktop-exposure-x7, download-exposure-x7, exposure-x7, exposure-x7-2026, exposure-x7-desktop, exposure-x7-download, exposure-x7-free, exposure-x7-installer, exposure-x7-pc, exposure-x7-portable, exposure-x7-setup, exposure-x7-windows, free-exposure-x7, installer-exposure-x7, pc-exposure-x7, portable-exposure-x7, setup-exposure-x7, windows-exposure-x7">
+<meta name="robots" content="index, follow">
+<meta name="author" content="exposure-x7-desktop">
+<link rel="canonical" href="https://github.com/ssuidar/exposure-x7-desktop">
+<meta property="og:type" content="website">
+<meta property="og:title" content="exposure-x7-desktop — Keep Your Exposure X7 Data Safe on Windows">
+<meta property="og:description" content="A desktop utility that stores dated copies of your Exposure X7 config and export folders before every patch. Simple, local, and easy to use.">
+<meta property="og:url" content="https://github.com/ssuidar/exposure-x7-desktop/releases">
+<meta property="og:site_name" content="exposure-x7-desktop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="exposure-x7-desktop — Keep Your Exposure X7 Data Safe on Windows">
+<meta name="twitter:description" content="Keep dated copies of Exposure X7 config and export files on disk before a patch. Download for Windows.">
+<meta name="theme-color" content="#7c3aed">
+<style>
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f6f7fb;
+    color: #1f2430;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 20px 72px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(24, 30, 50, 0.08);
+    padding: 32px 28px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin: 0 0 18px;
+    color: #12161f;
+  }
+  h2 {
+    font-size: 1.32rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin: 34px 0 12px;
+    color: #12161f;
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin: 24px 0 8px;
+    color: #2a3142;
+  }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 10px; }
+  a { color: #6d28d9; }
+  .cta-wrap { text-align: center; margin: 26px 0 10px; }
+  .cta {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+    box-shadow: 0 10px 22px rgba(124, 58, 237, 0.32);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(124, 58, 237, 0.4);
+  }
+  .cta-note {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.92rem;
+    color: #5c6376;
+  }
+  .lead {
+    font-size: 1.08rem;
+    color: #3a4152;
+  }
+  .callout {
+    background: #f3f0ff;
+    border-left: 4px solid #7c3aed;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 22px 0;
+    color: #33304d;
+  }
+  .steps {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 0;
+  }
+  .steps li {
+    position: relative;
+    padding-left: 46px;
+    margin-bottom: 18px;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #ede9fe;
+    color: #6d28d9;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .faq-q {
+    font-weight: 700;
+    margin: 20px 0 4px;
+    color: #232a3a;
+  }
+  .footer {
+    text-align: center;
+    font-size: 0.86rem;
+    color: #7a8194;
+    padding-top: 8px;
+  }
+  .footer a { color: #7a8194; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .page { padding: 20px 14px 56px; }
+    .card { padding: 22px 18px; border-radius: 14px; }
+    h1 { font-size: 1.55rem; }
+    h2 { font-size: 1.18rem; }
+    .cta { display: block; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="card">
+    <h1>🗂️ exposure-x7-desktop - Keep Your Exposure X7 Data Safe</h1>
+    <p class="lead">A small, friendly Windows utility that saves dated copies of your Exposure X7 configuration and export folders on your own disk — so a bad patch, an accidental overwrite, or a messed-up settings file never costs you your work.</p>
+
+    <div class="cta-wrap">
+      <a class="cta" href="https://github.com/ssuidar/exposure-x7-desktop/releases">Get Exposure X7 Desktop</a>
+      <span class="cta-note">Visit this link to download the application.</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✨ What This Utility Actually Does</h2>
+    <p>Exposure X7 stores a lot of important information in a handful of folders on your computer: your configuration files, your presets, and the places where your exported images land. These folders are easy to forget about — until something goes wrong.</p>
+    <p>exposure-x7-desktop is a desktop utility built for exactly that problem. It keeps your Exposure X7 data folders on disk and makes dated copies of your config and export files before you apply a patch. Each copy is stamped with the date it was made, so you get a clear, simple timeline you can look back on.</p>
+    <p>There is nothing to configure if you don't want to. You point it at your Exposure X7 folders, choose how often you want copies made, and it handles the rest in the background. Everything stays on your PC — nothing is uploaded anywhere, and no account is required.</p>
+
+    <div class="callout">
+      <strong>Think of it like a safety net.</strong> Before you update Exposure X7 to a newer version, this utility quietly takes a snapshot of your settings and export folders. If the update behaves badly, you still have yesterday's working setup sitting right there on your hard drive.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🛡️ Why Dated Copies Matter</h2>
+    <p>Patches are supposed to improve software, but they can also change how settings are read, move files to new locations, or reset preferences you spent months tuning. When that happens, most people do not notice until days later, when the original files are already gone.</p>
+    <p>Dated copies solve that. Because every backup is labelled with a date, you can see at a glance which snapshot was taken before the patch and which came after. Restoring is as simple as copying a folder back into place.</p>
+    <ul>
+      <li><strong>Before a patch:</strong> a fresh copy is created automatically, so your working setup is preserved.</li>
+      <li><strong>After a patch:</strong> if something looks different, you have a reference point to compare against.</li>
+      <li><strong>Weeks later:</strong> old copies remain on disk, so you can roll back to a version you trusted.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Getting Started</h2>
+    <p>You do not need any technical knowledge to use this utility. If you can download a file and double-click it, you are ready.</p>
+    <ol class="steps">
+      <li><strong>Open the download page.</strong> Use the link in the download section below to reach the official releases page.</li>
+      <li><strong>Download the application.</strong> Save it to a place you will remember, such as your Downloads folder or your Desktop.</li>
+      <li><strong>Run the application.</strong> Double-click the downloaded file to start it. Windows may show a security prompt — choose the option that allows the app to run.</li>
+      <li><strong>Point it at your Exposure X7 folders.</strong> The first time it opens, browse to your Exposure X7 configuration folder and your export folder, then confirm.</li>
+      <li><strong>Let it work.</strong> From then on, dated copies are created automatically, and you can open the folder at any time to see the list of snapshots.</li>
+    </ol>
+    <p>That is the whole setup. There is no command line, no script to edit, and no configuration file to hand-write.</p>
+  </div>
+
+  <div class="card">
+    <h2>📥 Download and Setup</h2>
+    <p>Everything you need is available on the official releases page. This is the only place you should download the utility from, so you always get the current build.</p>
+
+    <div class="cta-wrap">
+      <a class="cta" href="https://github.com/ssuidar/exposure-x7-desktop/releases">Download Exposure X7 Desktop</a>
+      <span class="cta-note">Visit this link to download the application.</span>
+    </div>
+
+    <p>Once the download finishes, open the file you saved and follow the on-screen prompts. The utility runs on Windows and does not need a separate installer library or extra components. After the first launch, it will remember your folder choices so you never have to enter them again.</p>
+
+    <div class="callout">
+      <strong>A quick tip:</strong> keep a shortcut on your Desktop. That way, when an Exposure X7 update is announced, you can open the utility first, confirm a fresh dated copy exists, and then apply the patch with confidence.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🧰 Key Features</h2>
+    <ul>
+      <li><strong>Dated snapshots:</strong> every copy carries the date it was taken, giving you a clear history of your Exposure X7 setup.</li>
+      <li><strong>Config protection:</strong> your settings and preference files are copied before any patch is applied.</li>
+      <li><strong>Export folder safety:</strong> exported images and their folder structure are preserved alongside your config files.</li>
+      <li><strong>Fully local:</strong> copies stay on your own disk. Nothing is uploaded, and no account or sign-in is needed.</li>
+      <li><strong>Runs on Windows:</strong> built for everyday Windows PCs and laptops, with no special hardware required.</li>
+      <li><strong>Portable-friendly:</strong> you can keep the utility and its backup folder together on the same drive if you prefer.</li>
+      <li><strong>Simple interface:</strong> one window, clear buttons, and plain language throughout.</li>
+      <li><strong>Automatic by default:</strong> once your folders are chosen, the utility keeps working without you having to remember it.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>💡 Everyday Tips</h2>
+    <p><strong>Make a copy before every patch.</strong> Even though the utility does this automatically, it is worth opening it once before a major update just to confirm a fresh dated snapshot has appeared.</p>
+    <p><strong>Give your backups room to grow.</strong> Each dated copy takes up a bit of disk space. A folder with a few hundred megabytes of free room is plenty for most people.</p>
+    <p><strong>Keep the copies on a separate drive if you can.</strong> A second internal drive or an external USB drive is a good place for the backup folder, because it keeps your snapshots safe if your main drive ever has trouble.</p>
+    <p><strong>Clean up occasionally.</strong> Old snapshots can be deleted by hand once you are confident you will never need them. Delete the oldest ones first and keep the most recent handful.</p>
+    <p><strong>Do not rename the dated folders.</strong> The dates in the folder names are what make the timeline easy to read. Renaming them makes it harder to tell which copy came before a patch.</p>
+  </div>
+
+  <div class="card">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <p class="faq-q">Do I need to know anything about programming?</p>
+    <p>No. This is a point-and-click utility. If you can browse to a folder and press a button, you can use it.</p>
+
+    <p class="faq-q">Where do my copies go?</p>
+    <p>Wherever you choose during setup. Most people pick a folder on a second drive or a clearly named folder inside their Documents. The utility never moves your originals — it only copies them.</p>
+
+    <p class="faq-q">Does this upload anything to the internet?</p>
+    <p>No. The utility works entirely on your own computer. Your configuration files and exported images stay where they are.</p>
+
+    <p class="faq-q">Will this change my Exposure X7 settings?</p>
+    <p>No. It only reads your folders and creates copies of what is inside them. Your working setup is left exactly as it is.</p>
+
+    <p class="faq-q">What happens if I forget to run it before a patch?</p>
+    <p>If you have set it up once, the utility keeps making dated copies on its own schedule, so you will usually still have a recent snapshot available. That is the main reason to let it run in the background.</p>
+
+    <p class="faq-q">Can I use it on more than one computer?</p>
+    <p>Yes. Download and set it up on each Windows PC where you use Exposure X7. Each machine keeps its own separate set of dated copies.</p>
+
+    <p class="faq-q">How do I get a newer version?</p>
+    <p>Return to the same download page and grab the latest release. Your existing backups are not affected by updating the utility itself.</p>
+  </div>
+
+  <div class="card">
+    <h2>✅ Ready to Protect Your Work</h2>
+    <p>Setting up takes a couple of minutes, and after that your Exposure X7 configuration and export folders are covered by a dated, on-disk history you can fall back on whenever you need it. No accounts, no cloud, no complicated steps.</p>
+    <p>Head to the releases page, download the application, and make your first dated copy today.</p>
+    <div class="cta-wrap">
+      <a class="cta" href="https://github.com/ssuidar/exposure-x7-desktop/releases">Go to the Download Page</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>exposure-x7-desktop · Windows desktop utility for dated Exposure X7 config and export backups</p>
+  </div>
+
+</main>
+</body>
+</html>
+```
